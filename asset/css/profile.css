@@ -1,0 +1,39 @@
+
+.container-details{
+    margin: auto;
+    margin-top: 200px;
+    width: 600px;
+    padding-left: 20px;
+    box-shadow: 1px 1px 2px rgb(46, 46, 46);
+    /* border-radius: 10px; */
+}
+.user-profile{
+    display: flex;
+    justify-content: space-between;
+
+}
+.user-profile a{
+    text-decoration: none;
+    color: rgb(72, 71, 71);
+    padding: 25px;
+    font-size: 20px;
+}
+.user-profile h3{
+    padding: 15px;
+    font-size: 40px;
+}
+.label{
+    margin-left: 15px;
+    display: block;
+    color: #333;
+    font-size: 20px;
+}
+.user_details input{
+    width: 90%;
+    margin: 15px;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #e2e2d0;
+    border-radius: 3px;
+}

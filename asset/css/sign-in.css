@@ -1,0 +1,104 @@
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgb(66, 65, 65);
+    width: 1200px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.navbar-nav li {
+    list-style: none;
+    margin: 15px;
+    padding: 5px;
+
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+}
+
+.big-container {
+    display: flex;
+}
+
+.container-1 {
+    width: 40%;
+    display: inline-block;
+    margin: 50px;
+    margin-top: 90px;
+    margin-left: 120px;
+}
+
+input {
+    width: 370px;
+    margin: 5px;
+    box-sizing: border-box;
+    border: 2px solid rgb(82, 80, 80);
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+p a {
+    text-decoration: none;
+    color: rgb(93, 89, 89);
+}
+
+input[placeholder] {
+    font-family: "Cactus Classical Serif", serif;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #355259;
+}
+
+input[type="submit"]:hover {
+    background-color: #253a3f;
+}
+
+
+.errors {
+    color: rgb(240, 4, 4);
+    margin: 4px;
+
+}
+
+
+.container-2 {
+    display: inline-block;
+    margin: 30px;
+    margin-top: -90px;
+    background: rgb(0, 0, 0, 0.5) url('https://images.alphacoders.com/877/thumb-1920-877068.jpg');
+    position: absolute;
+    /* background-size: cover; */
+    background-blend-mode: darken;
+    width: 45%;
+    height: 95%;
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.container-2 h1 {
+    text-align: center;
+    margin: 300px auto;
+    font-size: 60px;
+    color: rgb(210, 178, 186);
+}
+
+.container-2 p {
+    margin-top: -300px;
+    margin-left: 200px;
+    font-size: 20px;
+    color: rgb(24, 3, 21);
+
+}

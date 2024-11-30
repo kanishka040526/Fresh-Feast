@@ -1,0 +1,36 @@
+section{
+    display: flex;
+}
+.add_order {
+    width: 70%;
+    border: none;
+    margin: 20px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 170;
+    font-style: normal;
+}
+.heading {
+    display: flex; 
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.heading a {
+    text-decoration: none;
+    color: rgb(223, 141, 46);
+    font-size: 30px;
+    margin: 10px;
+}
+
+.table-head-orders th {
+    padding: 10px 120px 30px 10px;
+    /* padding-bottom: 30px;
+    padding-right: 120px; */
+    font-size: 20px;
+    color: rgb(52, 52, 52);
+}
+
+

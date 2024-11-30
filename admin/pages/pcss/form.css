@@ -1,0 +1,122 @@
+section{
+    display: flex;
+}   
+.container {
+    width: 65%;
+    margin: 25px;
+    margin-left: 100px;
+    padding: 20px;
+    padding-left: 80px;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgb(46, 46, 46);
+} 
+
+.text-secondary {
+    padding-top: 25px;
+    margin: 10px;
+    font-size: 30px;
+}
+
+label {
+    margin: 15px;
+    margin-bottom: 2px;
+    display: block;
+    color: #333;
+    font-size: 20px;
+}
+
+.form_data input {
+    width: 85%;
+    margin: 15px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    border: 2px solid rgb(82, 80, 80);
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #e2e2d0;
+}
+
+.form_data textarea {
+    width: 85%;
+    margin: 15px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    border: 2px solid rgb(82, 80, 80);
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #e2e2d0;
+}
+input[type="submit"] {
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #6ea010;
+}
+
+input[type="submit"]:hover {
+    background-color: #496b0b;
+}
+
+.done_successfully {
+    padding: 20px;
+    color: rgb(39, 196, 39);
+    margin: 5px;
+}
+
+#product_id, #category_id, .discount_type {
+    margin: 15px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    border: 2px solid rgb(82, 80, 80);
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    width: 85%;
+    background-color: #e2e2d0;
+}
+.image_update{
+    width: 80px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.dropdown-parent{
+    display:inline-block;
+}
+.pages{
+    padding-left: 10px;
+    color: rgb(94, 93, 93);
+    font-size: 18px;
+
+}
+.dropdown-child{
+    background-color:#fff;
+    display:none;
+    position:absolute;
+    border-radius: 1px;
+}
+.dropdown-parent:hover  .dropdown-child{
+    display:block;
+}
+.dropdown-items{
+    font-size: 10px;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-items:hover{
+    background-color: #ffc107;
+    border-radius: 1px;
+    cursor:pointer;
+    color:lemonchiffon;
+
+}
+.errors{
+    color: red;
+    margin-left: 10px;
+    display: block;
+}

@@ -1,0 +1,54 @@
+
+.container-dash{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-sidenav{
+    width: 20%;
+    display: contents;
+}
+.order_details{
+    display: flex;
+    flex-direction: column;
+}
+.container-order{
+    width: 350px;
+    height: 180px;
+    margin: 30px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.container-amount{
+    width: 350px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 5px;
+}
+.container-order h4, .container-amount h4{
+    margin: 20px;   
+    color: aliceblue;
+}
+.quantity_amount_number{
+    margin: 20px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 45px;
+}
+.c-1{
+    background-color: rgb(65, 114, 131);
+}
+.c-2{
+    background-color: rgb(144, 200, 220);
+}
+
+.c-3{
+    background-color: rgb(36, 142, 180);
+}
+.c-4{
+    background-color: rgb(9, 68, 90);
+}
+.c-5{
+    background-color: rgb(58, 191, 239);
+}

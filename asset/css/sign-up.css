@@ -1,0 +1,93 @@
+body{
+    position: relative;
+    }
+body::before{
+    content: "";
+    background: rgb(0, 0, 0, 0.5) url('../img/cart-page-header-img.jpg');
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+    background-blend-mode: darken;   
+    border-radius: 12px;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-nav li{
+    list-style: none;
+    margin: 15px;
+    padding: 5px;
+    
+}
+.navbar-nav li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.container{
+    text-align: center;
+    color: #fff;
+}
+.container-main{
+    width: 500px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.card-header{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.register-form input{
+    width: 85%;
+    background: transparent;
+    border: none;
+    margin: 12px;
+    border-bottom: 2px solid black;
+    padding: 15px;
+    font-size: 16px;
+}
+
+input[type="checkbox"]{
+    width: 5%;
+}
+
+.terms-and-conditions a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800px;
+    margin-left: 4px;
+    
+}
+input[type="submit"]{
+    width: 90%;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #355259;
+}
+input[type="submit"]:hover{
+    background-color: #253a3f;
+}
+.sign-in-here{
+    padding: 15px;
+    font-size: 18px;
+}
+.sign-in-here a{
+    text-decoration: none;
+}
+
+.errors{
+    color: rgb(154, 24, 24);
+    margin: 16px;
+}

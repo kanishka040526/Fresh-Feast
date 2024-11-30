@@ -1,0 +1,79 @@
+<?php
+include("header.php");
+
+$user_id = isset($_SESSION['users']) ? $_SESSION['users'] : [];
+$order_id = isset($_GET['id'])? ($_GET['id']): NULL;
+
+if(!empty($order_id)){
+$oreder_details = "SELECT orders.*, address_details.* FROM orders
+INNER JOIN address_details ON orders.address_id = address_details.id WHERE orders.id = $order_id";
+$order_result = $conn->query($oreder_details);
+}
+$conn->close();
+?>
+
+<div class="container-fluid page-header py-5">
+    <h1 class="text-center text-white display-6">Shop Detail</h1>
+    <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+        <li class="breadcrumb-item active text-white">Shop Detail</li>
+    </ol>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row g-4 mt-5 mb-5" style="margin-left: 20px;">
+        <?php
+                    while($rows = $order_result->fetch_assoc()){
+                        ?>
+
+        <div class="col-lg-6" style="width: 43%;">
+            <div class="rounded">
+                <a href="<?= $rows['image'];?>">
+                    <img src="../admin/imgs/<?= $rows['image'];?>" class="img-fluid rounded" alt="Image">
+                </a>
+            </div>
+        </div>
+        <div class="g-4 col-lg-6 border border-secondary py-5 px-5" style="width: 40%;">
+            <div class="row" style="">
+                <h6 class="fw-bold mb-3" style="width:45%;"> Name:
+                    <?= $rows['first_name'].' '.$rows['last_name'];?>
+                </h6>
+                <div class="mb-3">Date:
+                    <?php echo $rows['date']?>
+                </div>
+            </div>
+            <h4 class="fw-bold mb-3"> Product:
+                <?= $rows['p_name'];?>
+            </h4>
+            <?php if (!empty($rows['sale_price'])): ?>
+            <h5 style="margin-bottom:0px;" class=""> &#8377
+                <?= $rows['sale_price']; ?>
+            </h5>
+            <?php else: ?>
+            <h5 class="">Price: &#8377
+                <?= $rows['price']; ?>
+            </h5>
+            <?php endif; ?>
+            <h6 class="">Quantity:
+                <?= $rows['quantity']; ?>
+            </h6>
+            <div class="fw-bold">Address:</div>
+            <p class="mb-4">
+                <?=$rows['address'].' '.', '. $rows['city'].' '.', '. $rows['state'].' '.', '.$rows['country'].' '.', '.$rows['pin_code']?>
+            </p>
+
+            <div style="width: 40%;">
+                <h4 class="">User Details:
+                    <?= $rows['quantity']; ?>
+                </h4>
+            </div>
+        </div>
+        <?php
+                        }
+                        ?>
+    </div>
+</div>
+
+
+<?php include("footer.php");?>
